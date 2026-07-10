@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Dear Best Friend ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+
+<div class="hearts"></div>
+
+<!-- Rose Petals -->
+
+<div class="petals"></div>
+
+<!-- Sparkles -->
+
+<div class="sparkles"></div>
+
+<!-- Optional Music -->
+
+<audio id="bgMusic" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ========================= -->
+
+<!-- WELCOME PAGE -->
+
+<!-- ========================= -->
+
+<section id="welcome" class="screen active">
+
+<div class="glass welcome-card">
+
+<div class="image-frame">
+
+<img src="images/photo1.png" alt="Best Friend">
+
+</div>
+
+<h1>
+
+💖 My Dear Best Friend 💖
+
+</h1>
+
+<p>
+
+I made something special just for you...
+
+</p>
+
+<button class="mainBtn" onclick="goPassword()">
+
+Continue ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+
+<!-- PASSWORD PAGE -->
+
+<!-- ========================= -->
+
+<section id="password" class="screen">
+
+<div class="glass password-card">
+
+<div class="lock">
+
+🔒
+
+</div>
+
+<h2>
+
+Enter the secret password to continue
+
+</h2>
+
+<input
+
+type="password"
+
+id="passwordInput"
+
+placeholder="Enter Password"
+
+autocomplete="off"
+
+>
+
+<p id="errorText"></p>
+
+<button class="mainBtn"
+
+onclick="checkPassword()">
+
+Unlock ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+
+<!-- LOADING PAGE -->
+
+<!-- ========================= -->
+
+<section id="loading" class="screen">
+
+<div class="loadingBox">
+
+<div class="bigHeart">
+
+❤️
+
+</div>
+
+<h2>
+
+Loading something special for you...
+
+</h2>
+
+<div class="loader">
+
+<div></div>
+
+<div></div>
+
+<div></div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+
+<!-- QUESTION PAGE -->
+
+<!-- ========================= -->
+
+<section id="question" class="screen">
+
+<div class="glass question-card">
+
+<div class="topPhoto">
+
+<img src="images/photo2.jpeg" alt="Friend">
+
+</div>
+
+<h1>
+
+Am I the best person in the world?
+
+🥹❤️
+
+</h1>
+
+<div class="buttonArea">
+
+<button
+
+class="yesBtn"
+
+onclick="showYes()">
+
+❤️ YES
+
+</button>
+
+<button
+
+class="noBtn"
+
+onclick="showNo()">
+
+💔 NO
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+
+<!-- YES PAGE -->
+
+<!-- ========================= -->
+
+<section id="yesPage" class="screen">
+
+<div id="confettiContainer"></div>
+
+<div class="glass messageCard">
+
+<div class="slideshow">
+
+<img
+
+id="slideImage"
+
+src="images/photo2.jpg"
+
+alt="Photo"
+
+>
+
+</div>
+
+<h1>
+
+💖 My Dear Best Friend 💖
+
+</h1>
+
+<div id="typingText">
+
+<!-- Typing animation will appear here -->
+
+</div>
+
+<h2>
+
+I Love You,
+
+My Best Friend 💕
+
+</h2>
+
+<button
+
+class="mainBtn"
+
+onclick="restartWebsite()">
+
+❤️ Watch Again
+
+</button>
+
+</div>
+
+</section>
+<!-- ========================= -->
+
+<!-- NO PAGE -->
+
+<!-- ========================= -->
+
+<section id="noPage" class="screen">
+
+<div class="glass noCard">
+
+<div class="sadEmoji">
+
+😤
+
+</div>
+
+<h1>
+
+Katti!
+
+</h1>
+
+<p>
+
+You are not allowed to say No.
+
+Go back and choose the correct answer.
+
+😜❤️
+
+</p>
+
+<button
+
+class="mainBtn"
+
+onclick="backToQuestion()">
+
+💖 Go Back
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+
+<!-- FOOTER -->
+
+<!-- ========================= -->
+
+<footer class="footer">
+
+Made with ❤️ for My Dear Best Friend
+
+</footer>
+
+<!-- ========================= -->
+
+<!-- JAVASCRIPT -->
+
+<!-- ========================= -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
